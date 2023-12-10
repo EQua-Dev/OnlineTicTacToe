@@ -36,7 +36,7 @@ class KtorRealtimeMessagingClient(
             * and then parse the response (in JSON format) to the GameState data model class
             * */
             session = client.webSocketSession {
-                url("ws://192.168.43.181") //the url is the address that all players will have to be connected to
+                url("ws://192.168.43.181/play") //the url is the address that all players will have to be connected to
             }
             //the below assignment will be automatically triggered whenever there is a change from the server
             // and map the JSON to the GameState
