@@ -17,6 +17,14 @@ import kotlinx.coroutines.launch
 import java.net.ConnectException
 import javax.inject.Inject
 
+/*
+* With this viewmodel, we ensure that we:
+* - map our whole game state
+* - show our connection errors
+* - show or progress bar
+* - send the appropriate data to the server
+* close the socket client connection
+* */
 @HiltViewModel
 class TicTacToeViewModel @Inject constructor(
     private val client: RealtimeMessagingClient
